@@ -508,3 +508,922 @@ h1, h2, h3 {
     }
 
 }
+
+
+/* =========================================
+   ADDITIONAL PORTFOLIO PAGE STYLES
+========================================= */
+
+/* GENERAL PAGE HEADERS */
+
+.page-hero,
+.blog-hero {
+    padding: 105px 9% 75px;
+    background: var(--navy);
+    color: var(--white);
+}
+
+.page-hero h1,
+.blog-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 500;
+    line-height: 1.12;
+    max-width: 850px;
+    margin: 18px 0;
+}
+
+.page-hero h1 span,
+.blog-hero h1 span {
+    color: var(--gold);
+}
+
+.eyebrow {
+    color: var(--gold);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.blog-intro {
+    max-width: 680px;
+    color: #d4d9df;
+    line-height: 1.9;
+    font-size: 1rem;
+}
+
+.blog-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    color: var(--muted);
+    font-size: 0.72rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 65px;
+}
+
+/* ABOUT PAGE */
+
+.about-main {
+    padding: 85px 9%;
+}
+
+.about-photo {
+    width: 100%;
+    max-width: 370px;
+    min-height: 420px;
+    overflow: hidden;
+    background: var(--navy-light);
+    border-radius: 4px;
+}
+
+.about-photo img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+}
+
+.about-photo-placeholder {
+    min-height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gold);
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+}
+
+.about-text {
+    max-width: 750px;
+    line-height: 1.9;
+    color: var(--text);
+}
+
+.about-text h2,
+.about-section-title,
+.about-vision h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--navy);
+}
+
+.about-academics,
+.personality-section,
+.about-interests,
+.about-vision {
+    margin-top: 85px;
+}
+
+.academic-description {
+    line-height: 1.8;
+    color: var(--muted);
+    max-width: 750px;
+}
+
+.academic-tags,
+.interests-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.academic-tags span,
+.interests-list span {
+    padding: 10px 17px;
+    border: 1px solid var(--border);
+    color: var(--navy);
+    font-size: 0.85rem;
+}
+
+.personality-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.personality-card {
+    padding: 28px;
+    background: var(--cream);
+    border: 1px solid var(--border);
+}
+
+.personality-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--navy);
+    margin-bottom: 12px;
+}
+
+.personality-card p {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.interest-row {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.interest-row h3 {
+    color: var(--navy);
+    font-weight: 600;
+}
+
+.interest-row p {
+    color: var(--muted);
+    text-align: right;
+}
+
+/* CV PAGE */
+
+.cv-header {
+    background: var(--navy);
+    color: var(--white);
+    padding: 75px 9%;
+}
+
+.cv-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: 15px;
+}
+
+.cv-header p {
+    color: #d4d9df;
+    line-height: 1.8;
+}
+
+.cv-section {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 35px;
+    padding: 35px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.cv-label {
+    color: var(--gold);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.cv-content {
+    line-height: 1.8;
+}
+
+.cv-entry {
+    margin-bottom: 25px;
+}
+
+.cv-year {
+    color: var(--gold);
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.cv-institution {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.cv-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.cv-skill,
+.cv-interest-tags span {
+    padding: 10px 15px;
+    background: var(--cream);
+    border: 1px solid var(--border);
+    font-size: 0.85rem;
+}
+
+.cv-interest-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.print-button {
+    background: var(--gold);
+    color: var(--navy);
+    border: none;
+    padding: 13px 22px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.print-button:hover {
+    background: var(--white);
+}
+
+/* BLOG ARTICLES */
+
+.blog-article {
+    max-width: 1000px;
+    margin: auto;
+    padding: 80px 7%;
+}
+
+.article-opening {
+    margin-bottom: 70px;
+    max-width: 780px;
+}
+
+.article-number {
+    color: var(--gold);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.article-opening h2,
+.article-conclusion h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--navy);
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    font-weight: 500;
+    margin: 15px 0 20px;
+}
+
+.article-opening p,
+.article-conclusion p {
+    color: var(--muted);
+    line-height: 1.9;
+}
+
+.article-body {
+    line-height: 1.9;
+    color: var(--text);
+}
+
+.article-body p {
+    margin-bottom: 22px;
+}
+
+.reflection-placeholder {
+    background: var(--cream);
+    border-left: 3px solid var(--gold);
+    padding: 22px;
+    margin-top: 22px;
+}
+
+.reflection-placeholder strong {
+    display: block;
+    color: var(--navy);
+    margin-bottom: 8px;
+}
+
+.reflection-placeholder p {
+    color: var(--muted);
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.article-conclusion {
+    background: var(--navy);
+    padding: 45px;
+    margin-top: 85px;
+}
+
+.article-conclusion h2 {
+    color: var(--white);
+}
+
+.article-conclusion p {
+    color: #d4d9df;
+}
+
+/* TUCKMAN'S GROUP WORK STAGES */
+
+.tuckman-stages {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.tuckman-stage {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    gap: 25px;
+    padding: 40px 0;
+    border-top: 1px solid var(--border);
+}
+
+.stage-number {
+    font-family: 'Playfair Display', serif;
+    color: var(--gold);
+    font-size: 2.5rem;
+}
+
+.stage-label {
+    color: var(--gold);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.tuckman-stage h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--navy);
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.stage-description {
+    color: var(--muted);
+    line-height: 1.8;
+    max-width: 700px;
+}
+
+/* SKILLS AND EXPERIENCES */
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 35px 0 90px;
+}
+
+.skill-card {
+    background: var(--cream);
+    padding: 32px;
+    border: 1px solid var(--border);
+    transition: 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--gold);
+}
+
+.skill-index {
+    color: var(--gold);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.skill-card h3,
+.experience-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--navy);
+    margin: 18px 0 12px;
+}
+
+.skill-card p,
+.experience-card p {
+    color: var(--muted);
+    line-height: 1.8;
+    font-size: 0.92rem;
+}
+
+.experience-list {
+    margin-top: 35px;
+}
+
+.experience-card {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    gap: 25px;
+    padding: 35px 0;
+    border-top: 1px solid var(--border);
+}
+
+.experience-number {
+    font-family: 'Playfair Display', serif;
+    color: var(--gold);
+    font-size: 2.5rem;
+}
+
+.career-development {
+    background: var(--navy);
+    color: var(--white);
+    padding: 50px;
+    margin-top: 85px;
+}
+
+.career-development h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
+    font-weight: 500;
+    margin: 18px 0;
+}
+
+.career-development p:last-child {
+    color: #d4d9df;
+    line-height: 1.9;
+    max-width: 750px;
+}
+
+/* APPLICATION LETTER */
+
+.application-section,
+.email-section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 70px 7%;
+}
+
+.application-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.application-toolbar p:last-child {
+    color: var(--muted);
+    margin-top: 8px;
+}
+
+.application-document {
+    background: var(--white);
+    border: 1px solid var(--border);
+    padding: 65px;
+    box-shadow: 0 10px 35px rgba(16, 28, 44, 0.06);
+    color: var(--text);
+    line-height: 1.9;
+}
+
+.letter-heading {
+    margin-bottom: 35px;
+}
+
+.letter-heading h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--navy);
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+.letter-heading p,
+.letter-recipient p {
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.letter-date {
+    margin-bottom: 30px;
+}
+
+.letter-recipient {
+    margin-bottom: 30px;
+}
+
+.letter-subject {
+    margin-bottom: 25px;
+    color: var(--navy);
+}
+
+.application-document > p {
+    margin-bottom: 20px;
+}
+
+.letter-signature {
+    margin-top: 35px;
+}
+
+.letter-signature h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--navy);
+    font-size: 1.3rem;
+}
+
+.letter-signature p {
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+.application-note {
+    background: var(--cream);
+    border-left: 3px solid var(--gold);
+    padding: 22px;
+    margin-top: 25px;
+}
+
+.application-note strong {
+    color: var(--navy);
+}
+
+.application-note p {
+    color: var(--muted);
+    line-height: 1.7;
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+/* EMAIL TEMPLATE */
+
+.email-heading {
+    margin-bottom: 35px;
+}
+
+.email-heading h2,
+.email-guidelines h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--navy);
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 15px 0;
+}
+
+.email-heading p:last-child {
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.email-window {
+    background: var(--white);
+    border: 1px solid var(--border);
+    box-shadow: 0 10px 35px rgba(16, 28, 44, 0.06);
+}
+
+.email-window-top {
+    background: var(--navy);
+    padding: 18px 25px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--white);
+}
+
+.email-window-top > span {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--gold);
+}
+
+.email-window-top p {
+    margin-left: 12px;
+    font-size: 0.85rem;
+}
+
+.email-fields {
+    padding: 20px 30px;
+    border-bottom: 1px solid var(--border);
+}
+
+.email-field {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    gap: 15px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.email-field:last-child {
+    border-bottom: none;
+}
+
+.email-field span {
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+.email-field p {
+    color: var(--navy);
+    font-size: 0.9rem;
+    overflow-wrap: anywhere;
+}
+
+.email-body {
+    padding: 35px 30px;
+    line-height: 1.9;
+}
+
+.email-body > p {
+    margin-bottom: 20px;
+}
+
+.email-signature {
+    color: var(--muted);
+}
+
+.email-signature strong {
+    color: var(--navy);
+}
+
+.email-attachments {
+    padding: 25px 30px;
+    background: var(--cream);
+}
+
+.attachment-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 18px;
+    padding: 15px;
+    background: var(--white);
+    border: 1px solid var(--border);
+}
+
+.attachment-icon {
+    background: var(--navy);
+    color: var(--white);
+    padding: 12px;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.attachment-item strong {
+    color: var(--navy);
+    font-size: 0.85rem;
+    overflow-wrap: anywhere;
+}
+
+.attachment-item p {
+    color: var(--muted);
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.email-guidelines {
+    margin-top: 75px;
+}
+
+.email-guidelines ul {
+    padding-left: 20px;
+    margin-top: 25px;
+}
+
+.email-guidelines li {
+    color: var(--muted);
+    padding: 10px 0;
+    line-height: 1.7;
+}
+
+/* NAVIGATION AND PAGE LINKS */
+
+.nav-links a.active {
+    color: var(--gold);
+}
+
+.next-article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-top: 1px solid var(--border);
+    padding-top: 35px;
+    margin-top: 75px;
+}
+
+.next-article span {
+    color: var(--gold);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.next-article h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--navy);
+    font-size: 1.35rem;
+    font-weight: 500;
+    margin-top: 8px;
+}
+
+.next-article a {
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+.next-article a:hover {
+    color: var(--gold);
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+
+    .page-hero,
+    .blog-hero,
+    .cv-header {
+        padding: 75px 7%;
+    }
+
+    .about-main {
+        padding: 65px 7%;
+    }
+
+    .personality-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cv-section {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .application-document {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .page-hero,
+    .blog-hero {
+        padding: 65px 6%;
+    }
+
+    .blog-article,
+    .application-section,
+    .email-section {
+        padding: 55px 6%;
+    }
+
+    .personality-grid,
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tuckman-stage,
+    .experience-card {
+        grid-template-columns: 45px 1fr;
+        gap: 15px;
+    }
+
+    .stage-number,
+    .experience-number {
+        font-size: 1.8rem;
+    }
+
+    .article-conclusion,
+    .career-development {
+        padding: 30px 25px;
+    }
+
+    .application-toolbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .application-document {
+        padding: 28px 22px;
+    }
+
+    .email-fields,
+    .email-body,
+    .email-attachments {
+        padding: 22px;
+    }
+
+    .next-article {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .interest-row {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .interest-row p {
+        text-align: left;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .page-hero h1,
+    .blog-hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .application-document {
+        padding: 22px 16px;
+    }
+
+    .email-field {
+        grid-template-columns: 55px 1fr;
+        gap: 8px;
+    }
+
+    .tuckman-stage,
+    .experience-card {
+        grid-template-columns: 35px 1fr;
+        gap: 12px;
+    }
+
+    .article-conclusion,
+    .career-development {
+        padding: 25px 20px;
+    }
+}
+
+/* PRINTING THE CV AND APPLICATION LETTER */
+
+@media print {
+
+    .navbar,
+    .footer,
+    .print-button,
+    .application-toolbar,
+    .application-note,
+    .next-article {
+        display: none !important;
+    }
+
+    body {
+        background: white;
+    }
+
+    .cv-header,
+    .application-document {
+        box-shadow: none;
+        border: none;
+    }
+
+    .cv-header {
+        padding: 20px 0;
+        background: white;
+        color: black;
+    }
+
+    .cv-header p {
+        color: black;
+    }
+
+    .application-section {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .application-document {
+        padding: 0;
+    }
+
+    .application-document p {
+        color: black;
+    }
+}
+
